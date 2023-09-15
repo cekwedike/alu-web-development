@@ -3,6 +3,9 @@ body, main {
 }
 body {
     flex-direction: column;
+    background-color: #f4f4f4; /* Added a light background color */
+    color: #333; /* Default text color */
+    font-family: 'Arial', sans-serif; /* Default font */
 }
 main {
     flex-direction: row;
@@ -11,8 +14,15 @@ main {
 article {
     flex: 2;
     overflow-y: auto;
+    background-color: #fff; /* White background for article */
+    padding: 20px; /* Added some padding */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* A subtle shadow */
 }
 aside {
     flex: 1;
     overflow-y: auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-left: 1px solid #e0e0e0;
 }
