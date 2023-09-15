@@ -26,3 +26,48 @@ aside {
     padding: 20px;
     border-left: 1px solid #e0e0e0;
 }
+footer {
+    background-color: #333; /* Dark background for contrast */
+    color: #f4f4f4; /* Light text color for visibility against dark background */
+    padding: 20px 0; /* Vertical padding */
+    text-align: center; /* Center the content */
+    font-size: 0.9em; /* Slightly smaller font size */
+    border-top: 5px solid #f9f9f9; /* Light border at the top for some separation */
+    display: flex; /* Using flexbox for alignment */
+    justify-content: center; /* Centering content horizontally */
+    align-items: center; /* Centering content vertically */
+}
+
+footer a {
+    color: #f9f9f9;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #ff4500;
+}
+header {
+    background-color: #333;
+    color: #f4f4f4; 
+    padding: 10px 20px;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    border-bottom: 5px solid #f9f9f9;
+}
+
+header .logo {
+    font-size: 2em;
+    margin-right: 20px;
+}
+header a {
+    color: #f9f9f9;
+    text-decoration: none; 
+    transition: color 0.3s;
+}
+
+header a:hover {
+    color: #ff4500;
+}
