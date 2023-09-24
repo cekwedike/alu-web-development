@@ -44,3 +44,65 @@ header {
 .nav a:hover {
     color: #808;
 }
+.get-schooled {
+    width: 684px;
+    height: 151px;
+    top: 220px;
+    left: 377px;
+    font-family: Source Sans Pro;
+    font-size: 120px;
+    font-weight: 700;
+    line-height: 151px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #FFFFFF;
+}
+/*.school{
+    text-align: center;
+}*/
+.smiles{
+    width: 52px;
+    height: 20px;
+    top: 361px;
+    left: 593px;
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.grin{
+    width: 36px;
+    height: 20px;
+    top: 361px;
+    left: 704px;
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.laugh{
+    width: 49px;
+    height: 20px;
+    top: 361px;
+    left: 797px;
+    color: #FFFFFF;
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+.reg-btn{
+    width: 162px;
+    height: 44px;
+    top: 419px;
+    left: 639px;
+
+}
