@@ -104,5 +104,20 @@ header {
     height: 44px;
     top: 419px;
     left: 639px;
-
+    box-shadow: 0px 2px 20px 0px #00000080;
+    background: #C271FF;
+    border-radius: 25px;
+}
+#reg-4-free {
+    width: 121px
+    height: 18px
+    top: 13px
+    left: 20px
+    font-family: Source Sans Pro;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #FFFFFF;
 }
