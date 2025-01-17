@@ -1,14 +1,11 @@
 #!/usr/bin/python3
-
 '''MRUCache module'''
-
 from base_caching import BaseCaching
 
 
 class MRUCache(BaseCaching):
     """ MRUCache inherits from BaseCaching and is a caching system
     """
-
     def __init__(self):
         """ Initialize MRUCache
         """
@@ -27,8 +24,6 @@ class MRUCache(BaseCaching):
                 mru_key = self.access_order.pop(-1)
                 del self.cache_data[mru_key]
                 print("DISCARD: {}".format(mru_key))
-            
-            # Add the new key to cache and update access order
             self.cache_data[key] = item
             self.access_order.append(key)
 
@@ -41,4 +36,3 @@ class MRUCache(BaseCaching):
             self.access_order.append(key)
             return self.cache_data[key]
         return None
-
