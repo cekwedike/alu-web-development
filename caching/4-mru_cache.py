@@ -2,7 +2,6 @@
 
 '''MRUCache module'''
 
-
 from base_caching import BaseCaching
 
 
@@ -21,21 +20,25 @@ class MRUCache(BaseCaching):
         """
         if key is not None and item is not None:
             if key in self.cache_data:
+                # If key exists, remove it from access order
                 self.access_order.remove(key)
             elif len(self.cache_data) >= self.MAX_ITEMS:
-                mru_key = self.access_order.pop()
+                # If cache is full, remove the most recently used item
+                mru_key = self.access_order.pop(0)
                 del self.cache_data[mru_key]
                 print("DISCARD: {}".format(mru_key))
+            
+            # Add the new key and item to the cache
             self.cache_data[key] = item
-            self.access_order.insert(0, key)
+            self.access_order.append(key)
 
     def get(self, key):
         """ Get an item by key
         """
-        if key is not None:
-            if key in self.cache_data:
-                self.access_order.remove(key)
-                self.access_order.insert(0, key)
-                return self.cache_data[key]
-            else:
-                return None
+        if key is not None and key in self.cache_data:
+            # Move accessed key to the most recently used position
+            self.access_order.remove(key)
+            self.access_order.append(key)
+            return self.cache_data[key]
+        return None
+
