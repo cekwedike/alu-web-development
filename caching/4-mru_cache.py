@@ -20,11 +20,11 @@ class MRUCache(BaseCaching):
         """
         if key is not None and item is not None:
             if key in self.cache_data:
-                # If key exists, remove it from access order
+                # If the key exists, remove it from access_order
                 self.access_order.remove(key)
             elif len(self.cache_data) >= self.MAX_ITEMS:
-                # If cache is full, remove the most recently used item
-                mru_key = self.access_order.pop(0)
+                # Evict the most recently used item (last in access_order)
+                mru_key = self.access_order.pop(-1)  # Remove the last accessed key
                 del self.cache_data[mru_key]
                 print("DISCARD: {}".format(mru_key))
             
@@ -36,7 +36,7 @@ class MRUCache(BaseCaching):
         """ Get an item by key
         """
         if key is not None and key in self.cache_data:
-            # Move accessed key to the most recently used position
+            # Move the accessed key to the most recently used position
             self.access_order.remove(key)
             self.access_order.append(key)
             return self.cache_data[key]
