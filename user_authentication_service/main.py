@@ -8,9 +8,9 @@ import requests
 
 
 BASE_URL = 'http://localhost:5000'
-EMAIL = 'guillaume@holberton.io'
-PASSWD = 'b4l0u'
-NEW_PASSWD = 't4rt1fl3tt3'
+EMAIL = 'xxxx'
+PASSWD = 'xxxx'
+NEW_PASSWD = 'xxx'
 
 
 def register_user(email, password):
